@@ -2,7 +2,82 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* @layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+ 
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+ 
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+ 
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+ 
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+ 
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+ 
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+ 
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+ 
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+ 
+    --ring: 215 20.2% 65.1%;
+ 
+    --radius: 0.5rem;
+  }
+ 
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+ 
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+ 
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+ 
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+ 
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+ 
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+ 
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+ 
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+ 
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 85.7% 97.3%;
+ 
+    --ring: 217.2 32.6% 17.5%;
+  }
+}
+ 
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+} */
+
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -24,4 +99,567 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+} */
+
+.dark {
+  --tw-text-opacity: 1;
+  color: #d1d5db;
+}
+/* styles.css or any other appropriate CSS file */
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms ease-in-out; /* Adjust the duration and easing as needed */
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 300ms ease-in-out; /* Adjust the duration and easing as needed */
+}
+
+/* =======================================================
+=====SIDEBAR DETAILS 
+======================*/
+
+ul#my-info li:before {
+  content: "";
+  border: solid 2px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  font-size: 8px;
+  margin-left: -20.5px;
+  margin-top: 10px;
+  font-weight: 400;
+  background: #fff;
+  --tw-bg-opacity: 1;
+  border-color: rgb(59 130 246 / var(--tw-bg-opacity));
+  display: block;
+  position: absolute;
+}
+
+ul#my-info li {
+  padding-left: 1rem;
+  font-size: 0.875rem /* 14px */;
+  line-height: 1.75rem;
+  --tw-text-opacity: 1;
+  color: rgb(100 116 139 / var(--tw-text-opacity));
+}
+.dark ul#my-info li {
+  color: #cbd5e1;
+}
+ul#my-info span {
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+  padding-right: 0.55rem;
+}
+.dark ul#my-info span {
+  color: #f8fafc;
+}
+
+.profile-image-clip-path {
+  clip-path: polygon(0 9%, 100% 0, 100% 94%, 0% 100%);
+}
+
+/* =======================================================
+=====NAVBAR DETAILS 
+======================*/
+
+ul#NavBar li button {
+  padding-top: 0.55rem /* 4px */;
+  padding-bottom: 0.55rem /* 4px */;
+}
+
+ul#NavBar li {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+div#nav-butone {
+  cursor: pointer;
+}
+
+/* =======================================================
+=====DN-TOGGLE DETAILS 
+======================*/
+/* 1- main BG */
+/* By default its set to day */
+.toggle_main {
+  height: 50px;
+  width: 100px;
+  border-radius: 50px;
+  /* border: 1px solid black; */
+  margin: auto;
+  background-image: linear-gradient(aqua, skyblue);
+  position: relative;
+  cursor: pointer;
+}
+/* Night version */
+.toggle_main.night {
+  background-image: linear-gradient(midnightblue, rebeccapurple);
+}
+
+/* 2- The circle icon that moves about */
+.toggle_switch {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  background: yellow;
+  position: absolute;
+  top: 2.5px;
+  left: 2.5px;
+  box-shadow: 0 0 5px yellow;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+/* Night version */
+.night > .toggle_switch {
+  background: whitesmoke;
+  box-shadow: 0 0 5px whitesmoke;
+  transform: translate(50px, 0);
+}
+/* make it pretty hehe  */
+.toggle_switch > .toggle_crater {
+  background: burlywood;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 0;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4) inset;
+  transition: all 0.5s ease;
+}
+.night .toggle_crater {
+  opacity: 0.4;
+}
+.toggle_crater:first-child {
+  left: 2.5px;
+  top: 7.5px;
+  height: 7.5px;
+  width: 20px;
+  transform: rotate(-45deg);
+}
+.toggle_crater:last-child {
+  right: 5px;
+  top: 7.5px;
+  height: 7.5px;
+  width: 12.5px;
+  transform: rotate(45deg);
+}
+
+/* 3- base cloud design */
+.toggle_shape {
+  position: absolute;
+  background: whitesmoke;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+/* 3a- Small cloud */
+.toggle_shape.sm {
+  height: 2.5px;
+  width: 25px;
+  top: 50%;
+  left: 60%;
+}
+/* 3b- Medium cloud */
+.toggle_shape.md {
+  height: 5px;
+  width: 37.5px;
+  top: 25%;
+  left: 25%;
+  z-index: 2;
+}
+/* 3c- large cloud */
+.toggle_shape.lg {
+  height: 7.5px;
+  width: 50px;
+  bottom: 10px;
+  left: 25%;
+}
+
+/* ----Night version */
+/* --Make it pretty n glowy */
+.night .toggle_shape {
+  background: lightgray;
+  box-shadow: 0 0 10px 2px violet;
+}
+/* 3a- small star */
+.night .toggle_shape.sm {
+  height: 2.5px;
+  width: 2.5px;
+  transform: translate(-20px, 0);
+}
+.night .toggle_shape.sm:first-of-type {
+  transform: translate(-40px, -5px);
+}
+/* 3b- medium star */
+.night .toggle_shape.md {
+  height: 5px;
+  width: 5px;
+  transform: translate(5px, 0);
+}
+/* 3c- medium star */
+.night .toggle_shape.lg {
+  height: 7.5px;
+  width: 7.5px;
+  transform: translate(-5px, 0);
+}
+/* 
+=======================
+MAIN CONTENT
+====================== */
+#sec-title {
+  position: relative;
+  display: inline-block;
+  padding-left: 0.25rem /* 4px */;
+  padding-right: 0.25rem /* 4px */;
+}
+
+#sec-title span {
+  /*this is the bar under the title */
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+  position: absolute;
+  height: 7px;
+  width: 100%;
+  bottom: 0;
+  opacity: 0.5;
+  left: 0;
+  border-bottom-right-radius: 0.75rem;
+  border-bottom-left-radius: 0.75rem;
+}
+.dark #sec-title span {
+  background-color: #38bdf8;
+  opacity: 0.7;
+}
+#sec-title h1,
+#sec-title h2,
+#sec-title h3,
+#sec-title h4,
+#sec-title h5 {
+  font-size: 18px;
+  font-weight: 600;
+  position: relative;
+}
+/* for every even numbered section, make it a gray bg */
+div > div:nth-child(even) > section {
+  --tw-bg-opacity: 1;
+  background-color: rgb(226 232 240 / var(--tw-bg-opacity));
+  box-shadow: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 350ms;
+  animation-duration: 500ms;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+.dark div > div:nth-child(even) > section {
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 41 59 / var(--tw-bg-opacity));
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 350ms;
+  animation-duration: 500ms;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  /* --tw-bg-opacity: 1;
+  background-color: rgb(71 85 105 / var(--tw-bg-opacity));
+  might need adjustment along with >components>parts>maincontent */
+  /*TODO: FIXME: box-shadow: inset 0 2px 4px 0 rgb(0 0 0 / 0.05); */
+}
+
+p {
+  font-size: 0.875rem /* 14px */;
+  line-height: 1.5rem; /* 24px */
+}
+.dark p {
+  --tw-text-opacity: 1;
+  color: #e2e8f0;
+}
+/* ------==========-----HOME */
+/* Pursuits */
+/* Sec 2 */
+
+#pursuits #pursuit span#pursuit_title {
+  font-size: 0.875rem; /* 14px */
+  font-weight: 500;
+  line-height: 1.75rem; /* 28px */
+}
+#pursuit p {
+  font-size: 0.75rem; /* 12px */
+  font-weight: 400;
+  line-height: 1rem; /* 16px */
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+.dark #pursuit p {
+  --tw-text-opacity: 1;
+  color: rgb(148 163 184 / var(--tw-text-opacity));
+}
+/* skills
+sec 3 */
+
+#skills li {
+  list-style: none;
+}
+
+#skills h3 {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+ul#skills li p {
+  font-size: 0.75rem; /* 12px */
+  font-weight: 400;
+  line-height: 1rem; /* 16px */
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+
+.dark ul#skills li p {
+  color: rgb(148 163 184 / var(--tw-text-opacity));
+}
+
+#skills #progress {
+  margin: 10px 0 20px;
+  display: block;
+  height: 5px;
+  position: relative;
+  width: 100%;
+  overflow: visible;
+  border-radius: 50px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  background: #dfdfdf;
+  box-shadow: 0;
+}
+.dark ul#skills #progress {
+  background: #8f8f8f;
+  /* can change this later to a better one */
+}
+
+#skills #progress #percentage {
+  border-radius: 50px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  bottom: 0;
+  position: absolute;
+  top: 0;
+}
+
+/* ------==========-----RESUME */
+
+/* Clinical experience, Education Hx, etc === Hx */
+ul#hx {
+  margin-left: 10px;
+}
+#hx li {
+  border-left: solid 1px;
+  list-style: none;
+  padding: 0 0 0 19px;
+  --tw-border-opacity: 1;
+  border-color: rgb(148 163 184 / var(--tw-border-opacity));
+}
+/* Styles for all list items except the last one */
+#hx > li:not(:last-child) {
+  padding-bottom: 30px;
+}
+
+/* Overall heading of the hx-list */
+#hx_name {
+  font-weight: 500;
+  font-size: 1.125rem /* 18px */;
+  line-height: 1.75rem /* 28px */;
+  margin-left: 1.5rem /* 24px */;
+}
+/* A focus on the FIRST empty LI - this is for overall heading of this list */
+#hx li:first-child:before {
+  border: 0;
+  background: none;
+  position: relative;
+  --tw-bg-opacity: 1;
+  border-color: rgb(59 130 246 / var(--tw-bg-opacity));
+}
+/* this is for the title of the list and blue icon circle */
+#hx li:first-child i {
+  color: #fff;
+  --tw-bg-opacity: 1;
+  border-color: rgb(59 130 246 / var(--tw-bg-opacity));
+  float: left;
+
+  padding: 7px 7px;
+  border-radius: 30px;
+  margin: -13px -43px;
+  background: rgb(59 130 246 / var(--tw-bg-opacity));
+  width: 50px;
+  text-align: center;
+}
+
+.dark #hx li:first-child i {
+  border-color: rgb(55 65 81 / var(--tw-bg-opacity));
+  background: rgb(29 78 216 / var(--tw-bg-opacity));
+}
+/* The white dot */
+#hx li:before {
+  content: "";
+  border: solid 2px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  font-size: 8px;
+  margin-left: -23px;
+  font-weight: 400;
+  --tw-bg-opacity: 1;
+  border-color: rgb(59 130 246 / var(--tw-bg-opacity));
+  display: block;
+  position: absolute;
+  margin-top: 8px;
+  background: #fff;
+}
+/* The title of the entry */
+#hx li .li_title {
+  font-size: 1rem /* 16px */;
+  line-height: 6px;
+}
+/* The dates of the entry */
+/* Target only the immediate span elements inside the #hx li element */
+#hx li > span {
+  font-size: 0.75rem /* 12px */;
+  padding-top: 0.5rem /* 8px */;
+  padding-bottom: 0.5rem /* 8px */;
+  display: block;
+}
+#detailz {
+  /* color: #989898; */
+  font-size: 0.75rem /* 12px */;
+  line-height: 1rem /* 16px */;
+  font-weight: 450;
+}
+/* Target the span elements inside the #hx li p element */
+#hx li p span {
+  color: #000;
+  padding-right: 0.55rem;
+  font-weight: 500;
+}
+.dark #hx li p span {
+  color: rgb(226 232 240 / var(--tw-text-opacity));
+}
+/* Target the first span inside the #hx li p element with class .supervisor */
+#hx li p .supervisor {
+  padding-right: 0.55rem;
+}
+
+/* Target the second span inside the #hx li p element with class .status */
+#hx li p .status {
+  padding-right: 2.7rem;
+}
+
+/* Target the third span inside the #hx li p element with class .role */
+#hx li p .role {
+  padding-right: 3.4rem;
+}
+/* =====
+===== BLOG PAGES
+===== */
+
+/* =====
+===== CONTACT PAGE
+===== */
+#contact-details ul li {
+  list-style: none;
+  font-size: 14px;
+  color: #787878;
+  line-height: 34px;
+}
+.dark #contact-details ul li {
+  color: rgb(148 163 184 / var(--tw-text-opacity));
+}
+#contact-details ul li span {
+  color: #000;
+}
+.dark #contact-details ul li span {
+  color: #fff;
+}
+
+/* =====
+===== SCROLLBAR EDITING
+===== */
+/* SCROLLBAR EDITING */
+
+/* For WebKit-based browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #888, #555);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(45deg, #555, #333);
+}
+
+/* For Firefox */
+/* Note: Firefox uses a separate scrollbar pseudo-element */
+/* You can customize this section further based on your preferences */
+
+/* Set the color of the scrollbar */
+html {
+  scrollbar-color: #888 #f1f1f1;
+  scrollbar-width: thin;
+}
+
+/* Track */
+html::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+html::-moz-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Thumb */
+html::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #888, #555);
+}
+
+html::-moz-scrollbar-thumb {
+  background: linear-gradient(45deg, #888, #555);
+}
+
+/* Hover */
+html::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(45deg, #555, #333);
+}
+
+html::-moz-scrollbar-thumb:hover {
+  background: linear-gradient(45deg, #555, #333);
+}
+
+/* Make the scrollbar always appear so that its not jarring in between 
+pages, ie get rid of the "scrollbar jump" */
+html {
+  overflow-y: scroll;
 }
