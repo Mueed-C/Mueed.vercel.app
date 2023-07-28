@@ -36,24 +36,24 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     //   url: ogUrl,
     // },
     // The Open Graph metadata for the document.
-    manifest: {
-      type: "image/jpg",
-      url: "https://mueed-c.github.io/research/" + rblog.slug,
-      title: rblog.title,
-      description: rblog.desc,
-      // siteName: "My Website",
-      image: rblog.coverImage,
-      images: [
-        {
-          url: rblog.coverImage,
-        },
-      ],
-    },
-    //  The Twitter metadata for the document.
-    openGraph: {
-      card: "summary",
-      images: rblog.coverImage,
-    },
+    // manifest: {
+    //   type: "image/jpg",
+    //   url: "https://mueed-c.github.io/research/" + rblog.slug,
+    //   title: rblog.title,
+    //   description: rblog.desc,
+    //   // siteName: "My Website",
+    //   image: rblog.coverImage,
+    //   images: [
+    //     {
+    //       url: rblog.coverImage,
+    //     },
+    //   ],
+    // },
+    // //  The Twitter metadata for the document.
+    // openGraph: {
+    //   card: "summary",
+    //   images: rblog.coverImage,
+    // },
   };
 }
 
