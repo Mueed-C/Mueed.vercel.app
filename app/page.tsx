@@ -21,12 +21,32 @@ export default function Home() {
       <Head>
         {/* Metadata */}
         <title>Mueed - My Personal Portfolio!</title>
-        <meta name="description" content={"Resume Website"} />
+        <meta
+          name="description"
+          content={
+            "My Own Resume Website where I can share details about various projects =)"
+          }
+        />
         <meta
           name="keywords"
           content={"MBBS, Medical Student, Resume, Portfolio, Orthopedics"}
         />
         {/* Add more meta tags as needed */}
+        <script
+          async
+          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}',{
+    page_path: window.location.pathname
+  });`,
+          }}
+        />
       </Head>
       <div className="mx-5 gap-4 md:flex md:mt-10 justify-center ">
         <Sidebar />
