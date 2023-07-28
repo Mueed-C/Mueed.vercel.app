@@ -38,7 +38,7 @@ const Navbar_blog: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
         {/* DN_toggle on the left */}
         <div className="flex-shrink-0 absolute">
-          <div id="nav-butone" className="scale-[66%]">
+          <div id="nav-butone" className="scale-[45%] md:scale-[66%]">
             <DN_toggle toggled={toggled} onClick={handleClick} />
           </div>
         </div>
