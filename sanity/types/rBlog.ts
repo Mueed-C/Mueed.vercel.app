@@ -15,4 +15,6 @@ export type rBlog = {
     title: string;
   }[];
   content: PortableTextBlock[];
+  desc: string;
+  coverImage: string;
 };

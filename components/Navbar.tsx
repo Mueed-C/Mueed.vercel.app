@@ -145,6 +145,7 @@ const Navbar: React.FC<{ handleTabChange: (tabName: string) => void }> = ({
               onClick={toggleMenu}
               className="text-gray-300 hover:bg-gray-700 dark:hover:bg-slate-700 hover:text-white inline-flex items-center justify-center p-2 rounded-md focus:outline-none"
               // might need to double check if I messed anything  up here regarding dark mode ^
+              aria-label={isMenuOpen ? "Close Menu" : "Open Menu"}
             >
               <svg
                 className="h-6 w-6"

@@ -5,9 +5,30 @@ import { getRblogs } from "@/sanity/sanity.utils";
 import LoadingCard from "@/components/parts/loaders/CardLoader";
 import { motion } from "framer-motion";
 import LoadingOverlay from "@/components/parts/loaders/LoadingOverlay";
+// Import the rBlog type
+
+import { PortableTextBlock } from "sanity";
+type rBlog = {
+  _id: string;
+  _createdAt: Date;
+  title: string;
+  // author: {
+  //     name: string;
+  //     image: string;
+  // }
+  slug: string;
+  mainImage: string;
+  url: string;
+  categories: {
+    title: string;
+  }[];
+  content: PortableTextBlock[];
+  desc: string;
+  coverImage: string;
+};
 
 const Research = () => {
-  const [fetchedBlogs, setFetchedBlogs] = useState([]);
+  const [fetchedBlogs, setFetchedBlogs] = useState<rBlog[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [isLoading2, setIsLoading2] = useState(false);
   useEffect(() => {
@@ -17,13 +38,13 @@ const Research = () => {
       setIsLoading(false); // Once data is fetched, set isLoading to false
     })();
   }, []);
-  const handlePostClick = () => {
-    setIsLoading2(true);
-    // Simulate loading delay (you can replace this with actual API call or data fetching)
-    setTimeout(() => {
-      setIsLoading2(false);
-    }, 500);
-  };
+  // const handlePostClick = () => {
+  //   setIsLoading2(true);
+  //   // Simulate loading delay (you can replace this with actual API call or data fetching)
+  //   setTimeout(() => {
+  //     setIsLoading2(false);
+  //   }, 1);
+  // };
   return (
     <motion.div
       id="blog_research"
@@ -72,7 +93,7 @@ const Research = () => {
                 description={blog.desc}
                 link={blog.slug}
                 imageUrl={blog.coverImage}
-                onClick={handlePostClick}
+                // onClick={handlePostClick}
               />
             ))
           )}

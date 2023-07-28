@@ -3,9 +3,7 @@ import { useEffect, useState } from "react";
 import DN_toggle from "./parts/DN_toggle2";
 import Link from "next/link";
 
-const Navbar_blog: React.FC<{ handleTabChange: () => void }> = ({
-  handleTabChange,
-}) => {
+const Navbar_blog: React.FC = () => {
   // State for the menu
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -49,9 +47,7 @@ const Navbar_blog: React.FC<{ handleTabChange: () => void }> = ({
         <div className="flex-grow flex items-center justify-center">
           <div id="nav-butone">
             <span className="block h-14 text-gray-300 hover:bg-gray-700 dark:hover:bg-slate-800 hover:text-white px-3 py-2 rounded-md text-sm font-medium text-center">
-              <Link href="/" activeTab="research">
-                Go Back
-              </Link>
+              <Link href="/">Go Back</Link>
             </span>
           </div>
         </div>

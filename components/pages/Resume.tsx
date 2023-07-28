@@ -83,16 +83,16 @@ const Resume = () => {
   }, []);
 
   // Helper function to transform "resumeHx" data into the structure expected by TimelineSection
-  function transformResumeHxData(resumeHxData) {
+  function transformResumeHxData(resumeHxData: any): any[] {
     if (!resumeHxData || !resumeHxData.hxitems) {
       return []; // Return an empty array if data is not available
     }
 
-    return resumeHxData.hxitems.map((hxitem) => {
+    return resumeHxData.hxitems.map((hxitem: any) => {
       const { heading, events } = hxitem;
       return {
         title: heading || "", // Assuming heading maps to title
-        milestones: events.map((event) => ({
+        milestones: events.map((event: any) => ({
           title: event.title || "", // Assuming title maps to title
           description: event.desc || "", // Assuming desc maps to description
           image: event.image || null, // Assuming image maps to image
@@ -107,7 +107,7 @@ const Resume = () => {
    * param {string} dateStr - The date string in "YYYY-MM-DD" format.
    * returns {string} The formatted date in "DD Month YYYY" format.
    */
-  function formatDate(dateStr) {
+  function formatDate(dateStr: any) {
     // Create a Date object from the input date string
     const dateObj = new Date(dateStr);
 
@@ -124,7 +124,7 @@ const Resume = () => {
    * param {string} dateStr - The date string in "YYYY-MM-DD" format.
    * returns {string} The formatted date in "Month YYYY" format.
    */
-  function formatMYDate(dateStr) {
+  function formatMYDate(dateStr: any) {
     const dateObj = new Date(dateStr);
     const month = dateObj.toLocaleString("default", { month: "short" });
     const year = dateObj.getFullYear().toString();
@@ -173,7 +173,7 @@ const Resume = () => {
                   <ListLoader />
                 </>
               ) : (
-                researchData.map((item) => (
+                researchData.map((item: any) => (
                   <li key={item._key}>
                     <h3
                       id="li_title dark:text-slate-300"
@@ -227,7 +227,7 @@ const Resume = () => {
                 <ListLoader />
               </>
             ) : (
-              volunteerData.map((item) => (
+              volunteerData.map((item: any) => (
                 <li key={item._key}>
                   <h3 className="font-semibold dark:text-slate-300">
                     {item.title}
@@ -275,7 +275,7 @@ const Resume = () => {
                 <ListLoader />
               </>
             ) : (
-              lecaData.map((item) => (
+              lecaData.map((item: any) => (
                 <li key={item._key}>
                   <h3 className="font-semibold dark:text-slate-300 ">
                     {item.title}
@@ -316,7 +316,7 @@ const Resume = () => {
               // Actual content is displayed once data is loaded
               <>
                 {certifications
-                  .map((cert) => (
+                  .map((cert: any) => (
                     <Tooltip
                       key={cert._key}
                       title={cert.certName}
