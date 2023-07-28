@@ -40,7 +40,7 @@ const Navbar: React.FC<{ handleTabChange: (tabName: string) => void }> = ({
           <div className="flex items-center">
             <div className="flex-shrink-0">
               {/* Logo */}
-              <div id="nav-butone" className="scale-[66%]">
+              <div id="nav-butone" className="scale-[45%] md:scale-[66%]">
                 {/* <span className="text-white font-bold text-xl">My Personal Site :)</span> */}
                 <DN_toggle toggled={toggled} onClick={handleClick} />
               </div>
