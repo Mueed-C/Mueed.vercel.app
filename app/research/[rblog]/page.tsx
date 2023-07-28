@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const slug = params.rblog;
   const rblog = await getrBlog(slug);
   // Generate the full URL for Open Graph & Twitter
-  const ogUrl = `https://mueed-c.github.io/research/${rblog.slug}`;
+  const ogUrl = `https://mueed.vercel.app/research/${rblog.slug}`;
   if (!rblog)
     return {
       title: "Not Found",
@@ -38,7 +38,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     // The Open Graph metadata for the document.
     // manifest: {
     //   type: "image/jpg",
-    //   url: "https://mueed-c.github.io/research/" + rblog.slug,
+    //   url: "https://mueed.vercel.app/research/" + rblog.slug,
     //   title: rblog.title,
     //   description: rblog.desc,
     //   // siteName: "My Website",
