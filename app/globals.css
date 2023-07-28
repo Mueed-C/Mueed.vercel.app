@@ -105,24 +105,6 @@ body {
   --tw-text-opacity: 1;
   color: #d1d5db;
 }
-/* styles.css or any other appropriate CSS file */
-.fade-enter {
-  opacity: 0;
-}
-
-.fade-enter-active {
-  opacity: 1;
-  transition: opacity 300ms ease-in-out; /* Adjust the duration and easing as needed */
-}
-
-.fade-exit {
-  opacity: 1;
-}
-
-.fade-exit-active {
-  opacity: 0;
-  transition: opacity 300ms ease-in-out; /* Adjust the duration and easing as needed */
-}
 
 /* =======================================================
 =====SIDEBAR DETAILS 
