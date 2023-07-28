@@ -18,7 +18,7 @@ export function TimelineSection({ timelines }: { timelines: TimelineItem[] }) {
             {milestones?.map((experience, index) => (
               <div
                 key={index}
-                className="translate-x-16 md:translate-x-0 justify-between"
+                className="translate-x-6 md:translate-x-3 justify-between"
               >
                 <TimelineItem
                   milestone={experience}
