@@ -82,6 +82,7 @@
 
 ## About The Project
 
+[![Product Name Screen Shot][product-screenshot]](https://mueed.vercel.app/)
 <img align="center" src="public/site.png" alt="Website Screen Shot" width="480" height="250.25">
 
 Welcome to my Clinical Resume website, a comprehensive portfolio showcasing my professional background and clinical research projects. It highlights my contributions to various endeavors and demonstrates my commitment to continuous learning and adapting to new technologies.
