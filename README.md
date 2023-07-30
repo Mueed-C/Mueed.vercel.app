@@ -26,13 +26,13 @@
 
 <!-- [![MIT License][license-shield]][https://github.com/Mueed-C/Mueed-C.github.io/blob/master/LICENSE.txt] -->
 
-[![LinkedIn][linkedin-shield]][https://www.linkedin.com/mueedc]
+<!-- [![LinkedIn][linkedin-shield]][https://www.linkedin.com/mueedc] -->
 
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
   <a href="https://mueed.vercel.app/">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="app/favicon.ico" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">My Clinical Resume Website</h3>
@@ -48,6 +48,7 @@
     <a href="https://github.com/Mueed-C/Mueed-C.github.io/issues">Report Bug</a>
     ·
     <a href="https://github.com/Mueed-C/Mueed-C.github.io/issues">Request Feature</a>
+    ·
   </p>
 </div>
 
@@ -81,7 +82,7 @@
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Website Screen Shot][product-screenshot]]<img src="public/site.png" alt="Website Screen Shot" width="1920" height="1001">
 
 Welcome to my Clinical Resume website, a comprehensive portfolio showcasing my professional background and clinical research projects. It highlights my contributions to various endeavors and demonstrates my commitment to continuous learning and adapting to new technologies.
 
