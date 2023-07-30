@@ -82,7 +82,7 @@
 
 ## About The Project
 
-[![Website Screen Shot][product-screenshot]]<img src="public/site.png" alt="Website Screen Shot" width="960" height="500">
+[![Website Screen Shot][https://github.com/Mueed-C/Mueed-C.github.io/blob/master/public/site.png]]<img src="public/site.png" alt="Website Screen Shot" width="960" height="500">
 
 Welcome to my Clinical Resume website, a comprehensive portfolio showcasing my professional background and clinical research projects. It highlights my contributions to various endeavors and demonstrates my commitment to continuous learning and adapting to new technologies.
 
