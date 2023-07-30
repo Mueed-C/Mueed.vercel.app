@@ -82,9 +82,9 @@
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://mueed.vercel.app/)
+<div align="center">
 <img align="center" src="public/site.png" alt="Website Screen Shot" width="480" height="250.25">
-
+</div>
 Welcome to my Clinical Resume website, a comprehensive portfolio showcasing my professional background and clinical research projects. It highlights my contributions to various endeavors and demonstrates my commitment to continuous learning and adapting to new technologies.
 
 <sub>**\* = The overall site was made by hand, but trying to get Sanity to work with the frontend took a whole lot of tears :(**</sub>
@@ -97,6 +97,10 @@ Welcome to my Clinical Resume website, a comprehensive portfolio showcasing my p
 
 - [![Next][Next.js]][Next-url]
 - [![React][React.js]][React-url]
+  tailwindCSS
+  sanity
+  framermotion
+
 <!-- - [![Vue][Vue.js]][Vue-url]
 - [![Angular][Angular.io]][Angular-url]
 - [![Svelte][Svelte.dev]][Svelte-url]
