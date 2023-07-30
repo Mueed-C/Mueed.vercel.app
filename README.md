@@ -24,7 +24,8 @@
 [![Stargazers][stars-shield]][stars-url] -->
 <!-- [![Issues][issues-shield]][issues-url] -->
 
-[![MIT License][license-shield]][https://github.com/Mueed-C/Mueed-C.github.io/blob/master/LICENSE.txt]
+<!-- [![MIT License][license-shield]][https://github.com/Mueed-C/Mueed-C.github.io/blob/master/LICENSE.txt] -->
+
 [![LinkedIn][linkedin-shield]][https://www.linkedin.com/mueedc]
 
 <!-- PROJECT LOGO -->
@@ -37,7 +38,7 @@
 <h3 align="center">My Clinical Resume Website</h3>
 
   <p align="center">
-    project_description
+    My personal portfolio site, created mostly* by hand!
     <br />
     <a href="https://mueed.vercel.app/"><strong>Visit my site! »</strong></a>
     <br />
@@ -83,7 +84,10 @@
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
 Welcome to my Clinical Resume website, a comprehensive portfolio showcasing my professional background and clinical research projects. It highlights my contributions to various endeavors and demonstrates my commitment to continuous learning and adapting to new technologies.
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
+
+<sub>**The overall site was made by hand, but the navbar took some strain, and trying to get Sanity to work with the frontend took a whole lot of blood, sweat, and **tears** :(**</sub>
+
+<!-- Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description` -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
