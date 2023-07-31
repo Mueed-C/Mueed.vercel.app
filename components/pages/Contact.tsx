@@ -51,8 +51,9 @@ const Contact = () => {
 
             <li>
               <span className=" font-bold">E-mail:</span> Mueed.WMC@gmail.com
+              <br />
             </li>
-            <br />
+
             <li>
               <span>Flexible Availability:</span> I strive to accommodate
               discussions and meetings at your convenience, weekdays and

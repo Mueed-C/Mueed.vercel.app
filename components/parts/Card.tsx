@@ -63,12 +63,11 @@ const Card: React.FC<CardProps> = ({
         </p>
       </div>
       {done && link && (
-        <Link href={`/research/${link}`}>
-          <a
-            className="absolute inset-0 z-10"
-            style={{ pointerEvents: isHovered ? "auto" : "none" }}
-          ></a>
-        </Link>
+        <Link
+          href={`/research/${link}`}
+          className="absolute inset-0 z-10"
+          style={{ pointerEvents: isHovered ? "auto" : "none" }}
+        ></Link>
       )}
     </div>
   );
