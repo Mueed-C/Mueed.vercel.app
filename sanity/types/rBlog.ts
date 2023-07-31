@@ -17,4 +17,5 @@ export type rBlog = {
   content: PortableTextBlock[];
   desc: string;
   coverImage: string;
+  finished: boolean;
 };

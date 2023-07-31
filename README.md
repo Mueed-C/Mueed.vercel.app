@@ -35,7 +35,7 @@
     <img src="app/favicon.ico" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">My Clinical Resume Website</h3>
+<h3 align="center">Mueed Chaudhary</h3>
 
   <p align="center">
     My personal portfolio site, created mostly* by hand!
