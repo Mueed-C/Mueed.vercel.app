@@ -54,7 +54,7 @@ const Contact = () => {
               <br />
             </li>
 
-            <li>
+            <li className="mt-5">
               <span>Flexible Availability:</span> I strive to accommodate
               discussions and meetings at your convenience, weekdays and
               weekends included.
