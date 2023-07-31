@@ -18,7 +18,7 @@ const Alumni = () => {
 
     <Section>
         <section className="grid gap-4 sm:grid-cols-2">
-  <Card
+  {/* <Card
     imageUrl="https://t3.ftcdn.net/jpg/05/65/73/56/360_F_565735615_D2uX6alZuUOu77bJkfh5JKJbKmyZmxNu.jpg"
     heading="Card 1"
     description=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum laudantium placeat sunt hic voluptatem reprehenderit? Labore commodi officia sit veritatis minus deleniti non consequatur earum magni, distinctio illo tempora nobis!Lorem ipsum dolor sit amet, consectetur adipiscing elit."
@@ -54,7 +54,7 @@ const Alumni = () => {
     imageUrl="https://t3.ftcdn.net/jpg/05/65/73/56/360_F_565735615_D2uX6alZuUOu77bJkfh5JKJbKmyZmxNu.jpg"
     heading="Card 7"
     description="Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris."
-  />
+  /> */}
 </section>
 
         </Section>
