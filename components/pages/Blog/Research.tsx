@@ -25,6 +25,7 @@ type rBlog = {
   content: PortableTextBlock[];
   desc: string;
   coverImage: string;
+  finished: boolean;
 };
 
 const Research = () => {
@@ -93,6 +94,7 @@ const Research = () => {
                 description={blog.desc}
                 link={blog.slug}
                 imageUrl={blog.coverImage}
+                done={blog.finished}
                 // onClick={handlePostClick}
               />
             ))

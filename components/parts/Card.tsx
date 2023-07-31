@@ -7,6 +7,7 @@ interface CardProps {
   heading: string;
   description: string;
   link?: string;
+  done: boolean;
 }
 
 const Card: React.FC<CardProps> = ({
@@ -14,6 +15,7 @@ const Card: React.FC<CardProps> = ({
   heading,
   description,
   link,
+  done,
 }) => {
   const [isHovered, setIsHovered] = useState(false);
 
@@ -26,9 +28,10 @@ const Card: React.FC<CardProps> = ({
   };
 
   return (
-    <Link
-      href={`/research/${link}`}
-      className="relative rounded-lg shadow-lg overflow-hidden dark:bg-slate-700 transition-colors ease-out duration-500"
+    <div
+      className={`relative rounded-lg shadow-lg overflow-hidden dark:bg-slate-700 transition-colors ease-out duration-500" ${
+        done ? "cursor-pointer" : "cursor-default"
+      }`}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
@@ -48,7 +51,7 @@ const Card: React.FC<CardProps> = ({
         } transition-opacity duration-300 ease-in-out absolute inset-0 bg-black  flex justify-center items-center`}
       >
         <p className="text-white text-lg text-center">
-          {link
+          {done
             ? "Click to read more"
             : "Post still being written, please check back later when it's finished :)"}
         </p>
@@ -59,7 +62,15 @@ const Card: React.FC<CardProps> = ({
           {description}
         </p>
       </div>
-    </Link>
+      {done && link && (
+        <Link href={`/research/${link}`}>
+          <a
+            className="absolute inset-0 z-10"
+            style={{ pointerEvents: isHovered ? "auto" : "none" }}
+          ></a>
+        </Link>
+      )}
+    </div>
   );
 };
 
