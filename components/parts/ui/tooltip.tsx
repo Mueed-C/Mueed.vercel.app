@@ -6,6 +6,7 @@ import {
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import React from "react";
+import Link from "next/link";
 
 interface hoverProps {
   title: string;
@@ -28,12 +29,14 @@ const Tooltip2: React.FC<hoverProps> = ({ title, img }) => {
           <div className="space-y-1">
             <h4 className="text-sm font-semibold">Proof</h4>
             <div className="flex items-center pt-2">
-              <Image
-                src={img}
-                alt={`The image of my certification for {title}`}
-                width={2500}
-                height={2500}
-              />
+              <Link href={img}>
+                <Image
+                  src={img}
+                  alt={`The image of my certification for {title}`}
+                  width={2500}
+                  height={2500}
+                />
+              </Link>
             </div>
           </div>
         </div>
