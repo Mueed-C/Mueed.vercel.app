@@ -70,7 +70,7 @@ const MainContent: React.FC<MainContentProps> = ({ activeTab }) => {
     setActiveContent(newTab);
   };
   return (
-    <div className="rounded-md relative px-4">
+    <div className="rounded-md relative px-4 my-4 md:my-0">
       <AnimatePresence mode="wait" initial={false}>
         <motion.div
           key={activeTab}
