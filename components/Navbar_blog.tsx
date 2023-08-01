@@ -34,7 +34,7 @@ const Navbar_blog: React.FC = () => {
   }, []);
 
   return (
-    <nav className="bg-gray-800 dark:bg-slate-900 rounded-md transition-colors ease-in-out duration-1000">
+    <nav className="bg-gray-800 dark:bg-slate-900 rounded-md transition-colors ease-in-out duration-1000  fixed md:relative top-0 z-50 w-full md:w-auto -translate-x-5 md:-translate-x-0">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
         {/* DN_toggle on the left */}
         <div className="flex-shrink-0 absolute">
