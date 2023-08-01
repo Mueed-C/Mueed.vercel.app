@@ -45,11 +45,13 @@ const Navbar_blog: React.FC = () => {
 
         {/* Centered "HOME" element */}
         <div className="flex-grow flex items-center justify-center">
-          <div id="nav-butone">
-            <span className="block h-14 text-gray-300 hover:bg-gray-700 dark:hover:bg-slate-800 hover:text-white px-3 py-2 rounded-md text-sm font-medium text-center">
-              <Link href="/">Go Back</Link>
-            </span>
-          </div>
+          <Link href="/">
+            <div id="nav-butone">
+              <span className="block h-14 text-gray-300 hover:bg-gray-700 dark:hover:bg-slate-800 hover:text-white px-3 py-2 rounded-md text-sm font-medium text-center">
+                Go Back
+              </span>
+            </div>
+          </Link>
         </div>
       </div>
     </nav>
