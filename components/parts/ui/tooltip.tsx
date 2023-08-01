@@ -29,7 +29,7 @@ const Tooltip2: React.FC<hoverProps> = ({ title, img }) => {
           <div className="space-y-1">
             <h4 className="text-sm font-semibold">Proof</h4>
             <div className="flex items-center pt-2">
-              <Link href={img}>
+              <Link href={img} target="_blank" rel="noopener noreferrer">
                 <Image
                   src={img}
                   alt={`The image of my certification for {title}`}
