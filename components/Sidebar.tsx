@@ -17,7 +17,7 @@ const Sidebar = () => {
   return (
     <section
       id="sidebar_bro"
-      className="grid gap-8 justify-center py-5 md:py-0"
+      className="grid gap-8 justify-center pb-5 pt-20 md:py-0"
     >
       <div className=" bg-white dark:bg-gray-700  text-base text-black dark:text-slate-200 rounded-xl h-min max-w-xs flex-initial inline-block shadow-xl transition-colors ease-out duration-500">
         <div className="leading-4 p-5 -mb-5">
