@@ -228,7 +228,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Mueed Chaudhary - Mueed.WMC@gmail.com
 
-Project Link: [https://github.com/Mueed-C/Mueed-C.github.io](https://github.com/Mueed-C/Mueed-C.github.io)
+Project Link: [https://github.com/Mueed-C/Mueed-C.github.io](https://github.com/Mueed-C/Mueed.vercel.app)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
