@@ -92,7 +92,7 @@ Welcome to my Clinical Resume website, a comprehensive portfolio showcasing my p
     <br />
     <br />
 >
-><sub>* = The overall site was made by hand, but trying to get Sanity to work with the frontend took a whole lot of tears :(</sub>
+>* = The overall site was made by hand, but trying to get Sanity to work with the frontend took a whole lot of tears :(
 >
 <!-- Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description` -->
 
