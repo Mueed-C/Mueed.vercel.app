@@ -17,7 +17,7 @@ const Tooltip2: React.FC<hoverProps> = ({ title, img }) => {
   return (
     <HoverCard>
       <HoverCardTrigger asChild>
-        <Button variant="link" className="h-0 py-0 pl-0 pr-1 ">
+        <Button variant="link" className="h-0 py-0 pl-0 pr-1 underline ">
           {title}
         </Button>
       </HoverCardTrigger>
