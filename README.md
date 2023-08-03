@@ -69,6 +69,7 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li> -->
+    <li><a href="#features">Features</a></li>
     <!-- <li><a href="#usage">Usage</a></li> -->
     <li><a href="#roadmap">TODO</a></li>
     <li><a href="#contributing">Contributing</a></li>
@@ -90,8 +91,9 @@
 Welcome to my Clinical Resume website, a comprehensive portfolio showcasing my professional background and clinical research projects. It highlights my contributions to various endeavors and demonstrates my commitment to continuous learning and adapting to new technologies.
     <br />
     <br />
-<sub>* = The overall site was made by hand, but trying to get Sanity to work with the frontend took a whole lot of tears :(</sub>
-
+>
+><sub>* = The overall site was made by hand, but trying to get Sanity to work with the frontend took a whole lot of tears :(</sub>
+>
 <!-- Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description` -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -156,17 +158,40 @@ Use this space to show useful examples of how a project can be used. Additional 
 _For more examples, please refer to the [Documentation](https://example.com)_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
+<!-- FEATURES -->
+
+## Features
+
+- Dark mode!
+  - Will consistently carry over throughout the pages, and even remembers what your preference when you revisit the site.
+  - Checks your system default value on your first visit and automatically adjust the mode accordingly.
+  - Along with a smooth transition when switching between light & dark modes; getting rid of that jarring flashbang effect and providing a seamless experience.
+- Responsive website design
+  - Readjusts content based on your device, whether you're viewing it from a phone or computer screen.
+  - Build using TailwindCSS
+- Connected to a Sanity.io Backend
+  - Allows me to update certain details of my resume with ease, and even to make new research project pages instantly.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- TODO -->
 
 ## TODO
 
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-  - [ ] Nested Feature
+- [ ] Fix OG image generation for each blog post
+- [ ] maybe fix formatting of resume page?
+  - [ ] especially for mobile
+- [ ] On mobile: have tab change scroll down/up to the top of the section
+- [ ] Add "Alumni" blog page to host various useful information for Pakistani collegues (ie, path to US, UK, Ireland after MBBS etc)
+- [ ] I wanted to have the profile-card fade between several pictures of myself but this is the only good picture I have of myself for now lol. In addition I'm not sure how to achieve that while keeping the same resolutions.
+- [ ] Figure out proper meta infos, for the main page and for blog
+- [ ] "Resume" page: "Research Experience" heading: add separate tables for "ongoing" projects and "publications". Not sure if I should have any other, such as "Manuscript ready/waiting to be published"?
+  - [ ] Work on the backend, so that the research projects mentioned in the resume tab can be linked with each individual blog page- via their [slug].
+- [ ] Work on user experience a bit.\
+- [ ] Add my social links (especially LinkedIn)
+- [ ] Loading screen could be improved
 
-See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues).
+<!-- See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues). -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
