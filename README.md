@@ -182,12 +182,12 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 - [ ] maybe fix formatting of resume page?
   - [ ] especially for mobile
 - [ ] On mobile: have tab change scroll down/up to the top of the section
-- [ ] Add "Alumni" blog page to host various useful information for Pakistani collegues (ie, path to US, UK, Ireland after MBBS etc)
-- [ ] I wanted to have the profile-card fade between several pictures of myself but this is the only good picture I have of myself for now lol. In addition I'm not sure how to achieve that while keeping the same resolutions.
+- [ ] Add "Alumni" blog page to host various useful information for Pakistani colleagues (ie, path to US, UK, Ireland after MBBS etc.)
+- [ ] I wanted to have the profile-card fade between several pictures of myself but this is the only good picture I have of myself for now lol. In addition, I'm not sure how to achieve that while keeping the same resolutions. (I’m assuming each pic will cause the height/width of the profile-card to change. I want to look for an automatic approach so I don’t have to waste time individual cropping each photo)
 - [ ] Figure out proper meta infos, for the main page and for blog
 - [ ] "Resume" page: "Research Experience" heading: add separate tables for "ongoing" projects and "publications". Not sure if I should have any other, such as "Manuscript ready/waiting to be published"?
   - [ ] Work on the backend, so that the research projects mentioned in the resume tab can be linked with each individual blog page- via their [slug].
-- [ ] Work on user experience a bit.\
+- [ ] Work on user experience a bit.
 - [ ] Add my social links (especially LinkedIn)
 - [ ] Loading screen could be improved
 
