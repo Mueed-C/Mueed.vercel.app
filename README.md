@@ -104,6 +104,7 @@ Welcome to my Clinical Resume website, a comprehensive portfolio showcasing my p
 - [![React][React.js]][React-url]
 - ![Tailwind CSS](https://img.shields.io/static/v1?style=for-the-badge&message=Tailwind+CSS&color=222222&logo=Tailwind+CSS&logoColor=06B6D4&label=)
 - ![Sanity](https://img.shields.io/static/v1?style=for-the-badge&message=Sanity&color=F03E2F&logo=Sanity&logoColor=FFFFFF&label=)
+- ![Framer](https://img.shields.io/static/v1?style=for-the-badge&message=Framer&color=0055FF&logo=Framer&logoColor=FFFFFF&label=)
 
 <!-- - [![Vue][Vue.js]][Vue-url]
 - [![Angular][Angular.io]][Angular-url]
