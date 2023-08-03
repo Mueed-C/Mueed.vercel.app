@@ -102,9 +102,8 @@ Welcome to my Clinical Resume website, a comprehensive portfolio showcasing my p
 
 - [![Next][Next.js]][Next-url]
 - [![React][React.js]][React-url]
-  tailwindCSS
-  sanity
-  framermotion
+- ![Tailwind CSS](https://img.shields.io/static/v1?style=for-the-badge&message=Tailwind+CSS&color=222222&logo=Tailwind+CSS&logoColor=06B6D4&label=)
+- ![Sanity](https://img.shields.io/static/v1?style=for-the-badge&message=Sanity&color=F03E2F&logo=Sanity&logoColor=FFFFFF&label=)
 
 <!-- - [![Vue][Vue.js]][Vue-url]
 - [![Angular][Angular.io]][Angular-url]
@@ -191,6 +190,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 - [ ] Add my social links (especially LinkedIn)
 - [ ] Loading screen could be improved
 - [ ] Figure out how to make bullet points and other custom features work with PortableTextBlock
+- [ ] Improve loading speeds
 
 <!-- See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues). -->
 
