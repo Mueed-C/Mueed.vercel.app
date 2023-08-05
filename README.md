@@ -192,6 +192,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 - [ ] Loading screen could be improved
 - [ ] Figure out how to make bullet points and other custom features work with PortableTextBlock
 - [ ] Improve loading speeds
+- [ ] fix google analytics not working
 
 <!-- See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues). -->
 
