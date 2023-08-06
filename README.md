@@ -193,6 +193,9 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 - [ ] Figure out how to make bullet points and other custom features work with PortableTextBlock
 - [ ] Improve loading speeds
 - [ ] fix google analytics not working
+- [ ] with regards to blog page:
+  - [ ] Add ability to sort by tags
+  - [ ] Add post-date or study-status on cards
 
 <!-- See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues). -->
 
