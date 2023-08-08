@@ -168,7 +168,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
   - Along with a smooth transition when switching between light & dark modes; getting rid of that jarring flashbang effect and providing a seamless experience.
 - Responsive website design
   - Readjusts content based on your device, whether you're viewing it from a phone or computer screen.
-  - Build using TailwindCSS
+  - Built using TailwindCSS
 - Connected to a Sanity.io Backend
   - Allows me to update certain details of my resume with ease, and even to make new research project pages instantly.
 
