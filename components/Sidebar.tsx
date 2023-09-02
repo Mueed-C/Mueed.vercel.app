@@ -75,7 +75,7 @@ const Sidebar = () => {
           </li>
         </ul>
         <div className="mt-5 text-xs">
-          <DLButton name="Simple CV" onClick={handleDownload} />
+          <DLButton name="Download CV" onClick={handleDownload} />
           {/* <DLButton name="Custom CV" /> */}
         </div>
       </div>
