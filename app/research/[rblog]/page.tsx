@@ -61,7 +61,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 // Barebones lazy-loaded image component
-const SampleImageComponent = ({ value }) => {
+const SampleImageComponent = ({ value }: any) => {
   const { width, height } = getImageDimensions(value);
   return (
     <img
