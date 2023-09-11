@@ -7,8 +7,11 @@ import { PortableText } from "@portabletext/react";
 import Link from "next/link";
 import { useParams } from "next/navigation";
 import Navbar_blog from "@/components/Navbar_blog";
-
 import { Metadata } from "next";
+
+import urlBuilder from "@sanity/image-url";
+import { getImageDimensions } from "@sanity/asset-utils";
+import Image from "next/image";
 
 type Props = {
   params: { rblog: string };
@@ -57,6 +60,22 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
+// Barebones lazy-loaded image component
+const SampleImageComponent = ({ value }) => {
+  const { width, height } = getImageDimensions(value);
+  return (
+    <img
+      src={urlBuilder().image(value).width(800).fit("max").auto("format").url()}
+      alt={value.alt || " "}
+      loading="lazy"
+      style={{
+        // Avoid jumping around with aspect-ratio CSS property
+        aspectRatio: width / height,
+      }}
+    />
+  );
+};
+
 export default async function rBlog({ params }: Props) {
   const slug = params.rblog;
   const rblog = await getrBlog(slug);
@@ -77,7 +96,14 @@ export default async function rBlog({ params }: Props) {
                 <div>
                   <Section title={rblog.title}>
                     <div className="mt-5">
-                      <PortableText value={rblog.content} />
+                      <PortableText
+                        value={rblog.content}
+                        components={{
+                          types: {
+                            image: SampleImageComponent,
+                          },
+                        }}
+                      />
                     </div>
                   </Section>
                   <Section title="Let's Connect and Collaborate!" mbot="5">
