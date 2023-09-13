@@ -9,7 +9,7 @@ const Footer = ({}) => {
             <div className="text-slate-400 dark:text-slate-400 text-xs">
               Find an issue with this page?{" "}
               <Link
-                href="https://github.com/Mueed-C/Mueed-C.github.io"
+                href="https://github.com/Mueed-C/Mueed.vercel.app"
                 className="text-sky-600 dark:text-sky-700"
                 target="_blank"
                 rel="noopener noreferrer"
