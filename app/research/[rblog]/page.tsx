@@ -12,6 +12,7 @@ import { Metadata } from "next";
 import urlBuilder from "@sanity/image-url";
 import { getImageDimensions } from "@sanity/asset-utils";
 import Image from "next/image";
+import ImageBox from "@/components/parts/timeline parts/ImageBox";
 
 type Props = {
   params: { rblog: string };
@@ -60,22 +61,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-// Barebones lazy-loaded image component
-const SampleImageComponent = ({ value }: any) => {
-  const { width, height } = getImageDimensions(value);
-  return (
-    <img
-      src={urlBuilder().image(value).width(800).fit("max").auto("format").url()}
-      alt={value.alt || " "}
-      loading="lazy"
-      style={{
-        // Avoid jumping around with aspect-ratio CSS property
-        aspectRatio: width / height,
-      }}
-    />
-  );
-};
-
 export default async function rBlog({ params }: Props) {
   const slug = params.rblog;
   const rblog = await getrBlog(slug);
@@ -100,7 +85,26 @@ export default async function rBlog({ params }: Props) {
                         value={rblog.content}
                         components={{
                           types: {
-                            image: SampleImageComponent,
+                            image: ({
+                              value,
+                            }: {
+                              value: Image & { alt?: string; caption?: string };
+                            }) => {
+                              return (
+                                <div className="my-6 space-y-2">
+                                  <ImageBox
+                                    image={value}
+                                    alt={value.alt}
+                                    classesWrapper="relative aspect-[16/9]"
+                                  />
+                                  {value?.caption && (
+                                    <div className="font-sans text-sm italic">
+                                      {value.caption}
+                                    </div>
+                                  )}
+                                </div>
+                              );
+                            },
                           },
                         }}
                       />
