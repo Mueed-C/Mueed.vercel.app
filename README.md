@@ -196,7 +196,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 - [ ] with regards to blog page:
   - [ ] Add ability to sort by tags
   - [ ] Add post-date or study-status on cards
-  - [x] Add post-status if it ready to read.
+  - [x] Add post-status if it's ready to read or not.
   - [ ] Fix post-status alignment for right sided cards.
 
 <!-- See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues). -->
