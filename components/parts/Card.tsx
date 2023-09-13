@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { Badge } from "@/components/ui/badge";
 
 interface CardProps {
   imageUrl: string;
@@ -29,7 +30,7 @@ const Card: React.FC<CardProps> = ({
 
   return (
     <div
-      className={`relative rounded-lg shadow-lg overflow-hidden dark:bg-slate-700 transition-colors ease-out duration-500" ${
+      className={`relative rounded-lg shadow-lg overflow-hidden dark:bg-slate-700 transition-colors ease-out duration-500 " ${
         done ? "cursor-pointer" : "cursor-default"
       }`}
       onMouseEnter={handleMouseEnter}
@@ -62,6 +63,19 @@ const Card: React.FC<CardProps> = ({
           {description}
         </p>
       </div>
+      {/* DISPLAY STATUS OF POST, WHETHER IT IS READY OR NOT */}
+      <div className="flex justify-center pb-2">
+        {done ? (
+          <Badge className=" bg-green-400 dark:bg-green-800 border-gray-500">
+            Post Ready!
+          </Badge>
+        ) : (
+          <Badge variant="outline" className="border-gray-500">
+            Still Writing...
+          </Badge>
+        )}
+      </div>
+      {/* DISPLAY THE CLICKABLE LINK IF POST IS READY */}
       {done && link && (
         <Link
           href={`/research/${link}`}
