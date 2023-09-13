@@ -190,7 +190,8 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 - [ ] Work on user experience a bit.
 - [ ] Add my social links (especially LinkedIn)
 - [ ] Loading screen could be improved
-- [ ] Figure out how to make bullet points and other custom features work with PortableTextBlock
+- [ ] Figure out how to make bullet points and other custom features work with PortableTextBlock ("PTB")
+  - [x] So far figured out how to bring images via PTB, but havent been able to fetch its url and display the picture correctly...
 - [ ] Improve loading speeds
 - [ ] fix google analytics not working
 - [ ] with regards to blog page:
