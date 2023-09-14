@@ -191,13 +191,13 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 - [ ] Add my social links (especially LinkedIn)
 - [ ] Loading screen could be improved
 - [ ] Figure out how to make bullet points and other custom features work with PortableTextBlock ("PTB")
-  - [x] So far figured out how to bring images via PTB, but havent been able to fetch its url and display the picture correctly...
+  - [x] ~~So far figured out how to bring images via PTB, but havent been able to fetch its url and display the picture correctly...~~ UPDATE: FINALLY GOT IT WORKING
 - [ ] Improve loading speeds
 - [ ] fix google analytics not working
 - [ ] with regards to blog page:
   - [ ] Add ability to sort by tags
   - [ ] Add post-date or study-status on cards
-  - [x] Add post-status if it's ready to read or not.
+  - [x] ~~Add post-status if it's ready to read or not.~~
   - [ ] Fix post-status alignment for right sided cards.
 
 <!-- See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues). -->

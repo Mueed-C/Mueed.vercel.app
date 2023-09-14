@@ -13,6 +13,7 @@ import urlBuilder from "@sanity/image-url";
 import { getImageDimensions } from "@sanity/asset-utils";
 import Image from "next/image";
 import ImageBox from "@/components/parts/timeline parts/ImageBox";
+import { CustomPortableText } from "@/components/parts/ptb/CustomPortableText";
 
 type Props = {
   params: { rblog: string };
@@ -81,33 +82,12 @@ export default async function rBlog({ params }: Props) {
                 <div>
                   <Section title={rblog.title}>
                     <div className="mt-5">
-                      <PortableText
-                        value={rblog.content}
-                        components={{
-                          types: {
-                            image: ({
-                              value,
-                            }: {
-                              value: Image & { alt?: string; caption?: string };
-                            }) => {
-                              return (
-                                <div className="my-6 space-y-2">
-                                  <ImageBox
-                                    image={value}
-                                    alt={value.alt}
-                                    classesWrapper="relative aspect-[16/9]"
-                                  />
-                                  {value?.caption && (
-                                    <div className="font-sans text-sm italic">
-                                      {value.caption}
-                                    </div>
-                                  )}
-                                </div>
-                              );
-                            },
-                          },
-                        }}
-                      />
+                      {rblog.content && (
+                        <CustomPortableText
+                          paragraphClasses="font-serif text-lg"
+                          value={rblog.content}
+                        />
+                      )}
                     </div>
                   </Section>
                   <Section title="Let's Connect and Collaborate!" mbot="5">
