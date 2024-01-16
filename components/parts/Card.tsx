@@ -71,7 +71,7 @@ const Card: React.FC<CardProps> = ({
           </Badge>
         ) : (
           <Badge variant="outline" className="border-gray-500">
-            Upcoming... 
+            Upcoming...
           </Badge>
         )}
       </div>
