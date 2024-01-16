@@ -55,6 +55,7 @@ const LP = () => {
           React framework and various other innovations. Intrigued by these
           advancements, I decided to pick it up and make something out of it.
           <br />
+          <br />
           This project was basically an effort to show my dedication to
           embracing emerging technologies and cultivating fresh skills. It goes
           beyond speaking &#34;Im a quick learner&#34;- this website is a
