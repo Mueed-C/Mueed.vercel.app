@@ -44,6 +44,22 @@ const LP = () => {
           expand my knowledge and skills in orthopedics, making a positive
           impact in the field.
         </p>
+        <br />
+        <br />
+        <p>
+          Welcome to my website! This was made entirely by hand during my final
+          year at Wah Medical College. I had self-taught myself basic web
+          development back in highschool (HTML5, etc), but left it after getting
+          busy with college. During my final year of MBBS, I discovered new
+          trends & applications in the world of web development, including the
+          React framework and various other innovations. Intrigued by these
+          advancements, I decided to pick it up and make something out of it.
+          <br />
+          This project was basically an effort to show my dedication to
+          embracing emerging technologies and cultivating fresh skills. It goes
+          beyond speaking &#34;Im a quick learner&#34;- this website is a
+          tangible demonstration of my ability to adapt and learn proactively
+        </p>
       </Section>
 
       {/* SECTION 2 - MY PURSUITS --------------*/}
